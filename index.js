@@ -21,6 +21,9 @@ fs.appendFile(`./TimeContent/${dateTime}`, `${timeStamp}`, function (err) {
   }
 })
 
+app.get("/", (req, res) => {
+  res.send("Welcome to Backend Mentor")
+});
 
 
 fs.readdir('./TimeContent', (err, files) => {
